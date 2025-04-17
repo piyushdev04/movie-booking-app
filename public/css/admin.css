@@ -1,0 +1,116 @@
+/* Bright Admin Dashboard */
+.admin-container {
+    background-color: #ffffff;
+    color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  .admin-container h2,
+  .admin-container h3 {
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Form Section */
+  .admin-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
+  }
+  
+  .admin-form input,
+  .admin-form select,
+  .admin-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .admin-form input:focus,
+  .admin-form textarea:focus {
+    border-color: #e50914;
+    outline: none;
+  }
+  
+  .admin-form button {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-form button:hover {
+    background-color: #ff1744;
+  }
+  
+  /* Movie List */
+  .admin-movie-list {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .admin-movie-item {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ffc107;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .admin-movie-item:hover {
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+  }
+  
+  .admin-movie-item strong {
+    color: #e50914;
+    font-size: 18px;
+  }
+  
+  .admin-movie-item button {
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-movie-item button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 20px;
+    }
+  
+    .admin-form input,
+    .admin-form textarea {
+      font-size: 14px;
+    }
+  }
+  
