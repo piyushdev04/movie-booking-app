@@ -17,10 +17,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/api/auth", authRoutes);
-app.use("/api/admin", adminRoutes);
-app.use("/api/movies", movieRoutes);
-app.use("/api/bookings", bookingRoutes);
+try {
+    app.use("/api/auth", authRoutes);
+    app.use("/api/admin", adminRoutes);
+    app.use("/api/movies", movieRoutes);
+    app.use("/api/bookings", bookingRoutes);
+} catch (err) {
+    console.error("Route loading failed:", err);
+}
 
 // 404 handler for unknown API routes
 app.use('/api/*', (req, res) => {
