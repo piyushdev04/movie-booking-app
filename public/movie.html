@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Now Showing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2>Now Showing</h2>
+  <ul id="movieList"></ul>
+
+  <script>
+    async function loadMovies() {
+      const res = await fetch("/api/movies");
+      const movies = await res.json();
+
+      const list = document.getElementById("movieList");
+      list.innerHTML = "";
+
+      movies.forEach(movie => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <strong>${movie.title}</strong><br>
+          Genre: ${movie.genre}<br>
+          Duration: ${movie.duration} min<br>
+          Showtimes: ${movie.showtimes.join(", ")}<br>
+          Description: ${movie.description}
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    window.onload = loadMovies;
+  </script>
+</body>
+</html>
