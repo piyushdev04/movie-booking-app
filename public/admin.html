@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>    
+    <div class="admin-container">
+      <h2>Admin Dashboard</h2>
+    
+      <div class="admin-form">
+        <h3>Add New Movie</h3>
+        <form>
+          <input type="text" placeholder="Title">
+          <textarea placeholder="Description"></textarea>
+          <input type="text" placeholder="Genre">
+          <input type="number" placeholder="Duration (min)">
+          <input type="text" placeholder="Showtimes (comma separated)">
+          <input type="number" placeholder="Available Seats">
+          <button>Add Movie</button>
+        </form>
+      </div>
+    
+      <div class="admin-movie-list">
+        <h3>Existing Movies</h3>
+        <div class="admin-movie-item">
+          <strong>Interstellar</strong><br>
+          Genre: Sci-Fi | Duration: 169 min | Seats: 50<br>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+    
+  <script src="js/admin.js"></script>
+</body>
+</html>
