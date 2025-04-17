@@ -1,0 +1,141 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffd194, #70e1f5);
+    color: #222;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 25px;
+  }
+  
+  /* Forms (Login, Signup, etc.) */
+  form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #d32f2f;
+  }
+  
+  button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f44336;
+  }
+  
+  /* Movie List Display */
+  ul#movieList {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  ul#movieList li {
+    background: #fff3e0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ff9800;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  ul#movieList li:hover {
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.3);
+  }
+  
+  ul#movieList li strong {
+    color: #e65100;
+    font-size: 18px;
+  }
+  
+  /* Links */
+  a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Text Centering */
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .movie-card {
+    border: 2px solid #ffd54f;
+    background: linear-gradient(to right, #fff3e0, #ffe082);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  .movie-card h3 {
+    margin: 0 0 5px;
+  }
+  .movie-card button {
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .movie-card button:hover {
+    background: #e65100;
+  }  
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
